@@ -1,0 +1,180 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header-search {
+  width: 50%;
+  height: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #FFF;
+}
+
+.table-item {
+  /* padding: 1rem; */
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #000;
+  margin-top: 4rem;
+}
+
+.table-row {
+  border-bottom: 1px solid #000;
+}
+
+th{
+  border-bottom:1px solid #000;
+  padding: 1rem;
+  background-color: #e9e4e4;
+
+}
+
+td{
+  padding: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom:1px solid #000;
+}
+.navigator{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.pagination-button{
+  /* width: 1.5rem; */
+  /* height: 1.5rem; */
+  border-radius: 50%;
+ 
+  background-color: #FFF;
+  color: #2d7be9;
+  padding: 1rem;
+  border-color: #2d7be9;
+  font-weight: 700;
+}
+
+.active-button{
+  color: #FFF;
+  background-color: #2d7be9;
+}
+
+.pagination-button:disabled{
+  background-color: #bcbcbc;
+  color: #FFF;
+}
+
+.pagination-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+}
+.no-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+.delete-selected{
+  padding: 1rem;
+  color: #FFF;
+  background-color: crimson;
+  border-radius: 0.5rem;
+}
+.delete-button{
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  color: #FFF;
+  background-color: crimson;
+  border-radius: 0.5rem;
+}
+.edit-button{
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  color: #FFF;
+  background-color: #317cee;
+  border-radius: 0.5rem;
+}
+
+.save-button{
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  color: #FFF;
+  background-color: #41f376;
+  border-radius: 0.5rem;
+}
+.action-buttons{
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 100%;
+}
+.selected{
+  background-color: #d3cece;
+}
+
+@media screen and (max-width:768px) {
+  .App-header{
+    width: 100%;
+  }
+  .table-item{
+    width: 100%;
+  }
+  .App{
+    overflow-x: auto;
+    width: 100%;
+  }
+}
+
+.disable-status{
+  background-color: #eff2f6;
+}
+.inputbox{
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.show{
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #282c34;
+  border-radius: 1rem;
+}
+
+.inputemailbox{
+  text-align: center;
+}
